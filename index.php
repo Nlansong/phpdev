@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
     <title>Form Handling in PHP</title>
 </head>
 <body>
@@ -43,15 +42,14 @@ if($a==$b || $a==$c && $b==$d){
 <h1>  Simple Calculator written in php</h1>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
-<input id='number1' name='number1' placeholder='enter number' required  /> <br>
+ <p><input id='number1' name='number1' placeholder='enter number' required  /> </p>
 <select name='operator'>
     <option value='add'> + </option>
     <option value='subtract'> - </option>
     <option value='multiply'> * </option>
     <option value='devide'> / </option>
-</select>
-<input id='number2' name='number2' placeholder='enter  another  number' required  /> <br>
-
+</select><br>
+<input id="number2" name="number2" placeholder="enter another number" reqired />
 <button> Calculate </button>
 </form>
 
