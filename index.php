@@ -94,3 +94,23 @@ if($_SERVER['REQUEST_METHOD'] =='POST'){
     }
 }
 ?>
+
+
+<h1>How to signup a username in mysql using php<h1>
+<form action="includes/formhandler.php" method="post">
+    <label for="username">username</label>
+    <input id='username' name='username' type='text'  placeholder='enter username' required/> <br>
+    <label for="email">email</label>
+    <input id='email' name='email' type='email'  placeholder='enter email' required/> <br>
+    <label for="pwd">Password</label>
+    <input id='pwd' name='pwd' type='password'  placeholder='enter password' required/> <br>
+    <button>Sign Up</button>
+</form>
+
+
+<h1>How to show data in mysql database to website using php<h1>
+<form action="search.php" method="post">
+    <label for="search">Search for</label>
+    <input id='search' name='usersearch' type='text'  placeholder='search user' /> <br>
+    <button>Search</button>
+</form>
